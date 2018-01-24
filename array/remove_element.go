@@ -1,4 +1,4 @@
-package rmelm
+package array
 
 // RemoveElement 从数组/切片中原地删除一个元素
 // 在go中最常使用的是slice, 所以这里使用slice作为示例. 原理删除元素, 不影响slide的

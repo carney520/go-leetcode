@@ -1,8 +1,10 @@
-package rmelm
+package array
 
-import "testing"
-import "reflect"
-import "unsafe"
+import (
+	"reflect"
+	"testing"
+	"unsafe"
+)
 
 func TestRemoveElement(t *testing.T) {
 	arr := [...]interface{}{1, 2, 3, 4, 2}
