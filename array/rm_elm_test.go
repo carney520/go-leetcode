@@ -17,7 +17,7 @@ func TestRemoveElement(t *testing.T) {
 	}
 
 	// 比较元素
-	if !sliceEqual(res, expected) {
+	if !SliceEqual(res, expected) {
 		t.Error("RemoveElement 没有删除输出预定元素", expected, res)
 	}
 
@@ -27,16 +27,4 @@ func TestRemoveElement(t *testing.T) {
 	if sliceHeader.Data != arrPtr {
 		t.Errorf("底层数组不一致, expected: %x, actual: %x\n", arrPtr, sliceHeader)
 	}
-}
-
-func sliceEqual(a, b []interface{}) bool {
-	if len(a) != len(b) {
-		return false
-	}
-	for i := 0; i < len(a); i++ {
-		if a[i] != b[i] {
-			return false
-		}
-	}
-	return true
 }
