@@ -5,7 +5,7 @@ package array
 func TwoSum(arr []int, target int) (res [2]int, ok bool) {
 	cache := map[int]int{}
 	for i, value := range arr {
-		if value >= target {
+		if value > target {
 			continue
 		}
 
