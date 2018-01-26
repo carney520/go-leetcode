@@ -17,7 +17,7 @@ func SumOfSqr(num int) bool {
 		} else if r < num {
 			i++
 		} else {
-			j++
+			j--
 		}
 	}
 	return false

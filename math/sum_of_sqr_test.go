@@ -8,6 +8,7 @@ func TestSumOfSqr(t *testing.T) {
 		e bool
 	}{
 		{5, true},
+		{6, false},
 		{3, false},
 		{9, true},
 	}
